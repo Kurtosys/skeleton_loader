@@ -1,6 +1,7 @@
 {
-  "name": "skeleton-loader",
+  "name": "@kurtosys/skeleton_loader",
   "version": "0.1.0",
+  "description": "@kurtosys/skeleton_loader",
   "private": true,
   "dependencies": {
     "@types/jest": "24.0.15",
@@ -32,5 +33,22 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BlaineLingard/skeleton_loader.git"
+  },
+  "keywords": [
+    "skeleton",
+    "loader",
+    "ReactJs",
+    "reusable component",
+    "storybook"
+  ],
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/BlaineLingard/skeleton_loader/issues"
+  },
+  "homepage": "https://github.com/BlaineLingard/skeleton_loader#readme"
 }
