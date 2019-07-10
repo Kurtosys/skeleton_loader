@@ -7,7 +7,7 @@ const App: React.FC = () => {
     <div className="App">
       <header className="App-header">
       <AppWrapper>
-        <h1>home page</h1>
+        <h1>Skeleton Loader pages</h1>
       </AppWrapper>
       </header>
     </div>
