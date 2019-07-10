@@ -55,7 +55,6 @@
   },
   "homepage": "https://github.com/BlaineLingard/skeleton_loader#readme",
   "devDependencies": {
-    "@babel/core": "^7.5.0",
     "@babel/preset-typescript": "^7.3.3",
     "@storybook/addon-actions": "^5.1.9",
     "@storybook/addon-links": "^5.1.9",
