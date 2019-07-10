@@ -11,5 +11,6 @@
           "pure": true
         }
       ]
-    ]
+    ],
+    "presets": ["@babel/preset-typescript"]
   }
