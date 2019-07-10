@@ -17,3 +17,10 @@ storiesOf('Button', module)
       </span>
     </Button>
   ));
+
+  storiesOf('Skeleton', module)
+  .add('with text', () => <h1>dhdd</h1>)
+  .add('with some emoji', () => (
+   <h1>Skeleton</h1>
+  
+  ));
