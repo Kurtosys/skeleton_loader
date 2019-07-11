@@ -1,16 +1,4 @@
 {
-    "plugins": [
-      [
-        "babel-plugin-styled-components",
-        {
-          "ssr": false,
-          "displayName": false,
-          "fileName": false,
-          "minify": false,
-          "transpileTemplateLiterals": false,
-          "pure": true
-        }
-      ]
-    ],
-    "presets": ["@babel/preset-typescript"]
-  }
+  "presets": ["es2015", "react"],
+  "plugins": ["babel-plugin-transform-class-properties"]
+}

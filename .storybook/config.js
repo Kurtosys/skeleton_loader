@@ -1,8 +1,10 @@
-import { configure } from '@storybook/react';
+import { configure } from "@storybook/react";
+
+import "./base.css";
 
 function loadStories() {
-  require('../src/stories');
+  require("../stories/Skeleton.story.js");
+  require("../stories/Post.story.js");
 }
 
 configure(loadStories, module);
-

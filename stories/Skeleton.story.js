@@ -2,6 +2,7 @@ import React from "react";
 import { storiesOf } from "@storybook/react";
 import SideBySide from "./SideBySide";
 import Skeleton, { SkeletonTheme } from "../src";
+import { withInfo } from "@storybook/addon-info";
 
 const Box = ({ children }) => (
   <a
@@ -20,6 +21,7 @@ const Box = ({ children }) => (
 );
 
 storiesOf("Skeleton", module)
+  .addDecorator(withInfo)
   .add("with wrapper", () => (
     <SideBySide>
       <Skeleton count={5} wrapper={Box} />
