@@ -1,6 +1,6 @@
 {
   "name": "@kurtosys/skeleton_loader",
-  "version": "6.0.0",
+  "version": "7.0.0",
   "description": "@kurtosys/skeleton_loader",
   "license": "MIT",
   "author": "Blaine Lingard",
@@ -37,7 +37,8 @@
     "@storybook/components": "^5.1.9",
     "@storybook/router": "^5.1.9",
     "@storybook/theming": "^5.1.9",
-    "emotion": "^9.2.8"
+    "emotion": "^9.2.8",
+    "js-yaml": "^3.13.1"
   },
   "peerDependencies": {
     "react": "^15.6.1 || ^16.0.0"
