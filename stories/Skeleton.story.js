@@ -4,6 +4,8 @@ import SideBySide from "./SideBySide";
 import Skeleton, { SkeletonTheme } from "../src";
 import { withInfo } from "@storybook/addon-info";
 
+
+
 const Box = ({ children }) => (
   <a
     style={{
@@ -13,18 +15,21 @@ const Box = ({ children }) => (
       lineHeight: 2,
       padding: 20,
       marginBottom: 10,
-      width: 100
+      width: 100,
+      textAlign: "center"
     }}
   >
     {children}
   </a>
 );
 
+
+
 storiesOf("Skeleton", module)
   .addDecorator(withInfo)
   .add("with wrapper", () => (
     <SideBySide>
-      <Skeleton count={5} wrapper={Box} />
+      <Skeleton count={10} wrapper={Box} />
       <div>
         <Box key={1}>A</Box>
         <Box key={2}>B</Box>
@@ -32,7 +37,9 @@ storiesOf("Skeleton", module)
         <Box key={4}>D</Box>
       </div>
     </SideBySide>
-  ))
+  ),{
+    notes: 'A very simple example of addon notes',
+  })
   .add("with wrapper and theme", () => (
     <SideBySide>
       <SkeletonTheme color="#333" highlightColor="#666">
