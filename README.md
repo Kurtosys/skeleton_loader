@@ -17,7 +17,7 @@ npm i
 Install by `npm`/`yarn` with `@kurtosys/skeleton_loader`.
 
 ```javascript
-import Skeleton from 'react-loading-skeleton';
+import Skeleton from '@kurtosys/skeleton_loader';
 
 <Skeleton/> // Simple, single-line loading skeleton
 <Skeleton count={5}/> // Five-line loading skeleton
