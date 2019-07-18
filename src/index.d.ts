@@ -16,4 +16,21 @@ export class SkeletonTheme extends Component<SkeletonThemeProps> {}
 interface SkeletonThemeProps {
   color?: string;
   highlightColor?: string;
+  height?: string | number;
+}
+
+export class SkeletonWrapper extends Component<SkeletonWrapperProps> {}
+
+interface SkeletonWrapperProps {
+  color?: string;
+  highlightColor?: string;
+  height?: string | number;
+}
+
+export class SkeletonContainer extends Component<SkeletonContainerProps> {}
+
+interface SkeletonContainerProps {
+  width?: string | number;
+  wrapper?: ReactNode;
+  height?: string | number;
 }

@@ -4,6 +4,7 @@ import { css, keyframes } from "emotion";
 export const defaultBaseColor = "#eee";
 
 export const defaultHighlightColor = "#f5f5f5";
+export const defaultHeight = "200px";
 
 export const skeletonKeyframes = keyframes`
   0% {

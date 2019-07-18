@@ -3,13 +3,15 @@ import { css } from "emotion";
 import {
   skeletonClass,
   defaultBaseColor,
-  defaultHighlightColor
+  defaultHighlightColor,
+  defaultHeight
 } from "./skeleton";
 
 export default class SkeletonTheme extends Component {
   static defaultProps = {
     color: defaultBaseColor,
-    highlightColor: defaultHighlightColor
+    highlightColor: defaultHighlightColor,
+    height: defaultHeight
   };
 
   constructor(props) {
