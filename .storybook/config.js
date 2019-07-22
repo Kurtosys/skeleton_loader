@@ -5,6 +5,7 @@ import "./base.css";
   function loadStories() {
     require("../stories/Skeleton.story.js");
     require("../stories/Post.story.js");
+    require("../stories/Components.story.js");
   }
   
   addParameters({
