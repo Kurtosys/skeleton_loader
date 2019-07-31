@@ -4,27 +4,28 @@ import {
   skeletonClass,
   defaultBaseColor,
   defaultHighlightColor,
-  defaultHeight,
-  defaultWidth
+		defaultWidth,
+defaultTabHeight
 } from "../../skeleton";
 
-export default class SkeletonGraphTheme extends Component {
+export default class SkeletonTabTheme extends Component {
  static defaultProps = {
    color: defaultBaseColor,
    highlightColor: defaultHighlightColor,
-   height: defaultHeight,
-   width: defaultWidth
+			width: defaultWidth,
+			height: defaultTabHeight
+
  };
 
  constructor(props) {
    super(props);
 
-   this.themeGraphClass = css`
+   this.themeTabClass = css`
      .${skeletonClass} {
-       border: 1px solid ${props.color};
        background-color: ${props.color};
-       height: ${props.height};
        width: ${props.width};
+							height: ${props.height};
+							max-width: 500px;
        background-image: linear-gradient(
          90deg,
          ${props.color},
@@ -40,6 +41,6 @@ export default class SkeletonGraphTheme extends Component {
  }
 
  render() {
-   return <div className={this.themeGraphClass}>{this.props.children}</div>;
+   return <div className={this.themeTabClass}>{this.props.children}</div>;
  }
 }

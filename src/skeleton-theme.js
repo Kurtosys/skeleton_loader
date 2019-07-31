@@ -19,6 +19,7 @@ export default class SkeletonTheme extends Component {
 
     this.themeClass = css`
       .${skeletonClass} {
+        height: ${props.height};
         background-color: ${props.color};
         background-image: linear-gradient(
           90deg,

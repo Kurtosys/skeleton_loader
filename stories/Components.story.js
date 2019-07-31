@@ -1,6 +1,5 @@
 import React from "react";
 import { storiesOf } from "@storybook/react";
-import Skeleton from "../src";
 import SkeletonGraph from "../src/components/skeletonGraph";
 
 import { withInfo } from "@storybook/addon-info";
@@ -10,7 +9,6 @@ storiesOf("Components", module)
 .addDecorator(withKnobs)
  .add('Graph component', () => (
   <div>
-    <Skeleton count={10} />
-    <SkeletonGraph/>
+    <SkeletonGraph size="large"/>
   </div>
  ));

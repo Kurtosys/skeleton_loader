@@ -2,9 +2,11 @@ import React, { Component } from "react";
 import { css, keyframes } from "emotion";
 
 export const defaultBaseColor = "#eee";
-
 export const defaultHighlightColor = "#f5f5f5";
-export const defaultHeight = "200px";
+export const defaultHeight = "20px";
+export const defaultWidth = "100%";
+
+export const defaultTabHeight = "40px";
 
 export const skeletonKeyframes = keyframes`
   0% {
@@ -23,12 +25,12 @@ export const skeletonClass = css`
     ${defaultHighlightColor},
     ${defaultBaseColor}
   );
-  background-size: 200px 100%;
+  background-size: 100%;
   background-repeat: no-repeat;
-  border-radius: 4px;
+  border-radius: 2px;
   display: inline-block;
-  line-height: 1;
-  width: 100%;
+  line-height: auto;
+  width: ${defaultWidth};
 `;
 
 export default class Skeleton extends Component {

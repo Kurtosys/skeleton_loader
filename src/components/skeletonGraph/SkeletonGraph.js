@@ -2,41 +2,51 @@ import React, { Component } from "react";
 import PropTypes from "prop-types";
 import Skeleton from "../../skeleton";
 import SkeletonGraphTheme from "./SkeletonGraph-theme";
+import SkeletonTabTheme from "./SkeletonTab-theme";
+
+
+
 
 
 export default class SkeletonGraph extends Component {
  static propTypes = {
    title: PropTypes.string,
    children: PropTypes.node,
-   size: PropTypes.oneOf(["small", "large"])
+   size: PropTypes.oneOf(["small", "large"]),
  };
 
  static defaultProps = {
-   size: "small"
+   size: "small",
+   height: "large",
  };
 
+ 
  getStyle() {
    const { size } = this.props;
    const baseStyle = {
-     padding: 8,
-     width: "20em"
+     padding: "1rem",
+     width: size === "large" ? "100%" : 400,
+     maxWidth: "100%",
+     margin: "0 auto 2rem",
+     border: "1px solid #eee"
    };
    return Object.assign(baseStyle, {
-     fontSize: size === "small" ? 16 : 25,
-     lineHeight: size === "small" ? "normal" : 2
+     fontSize: size === "small" ? 16 : 25
    });
  }
 
  render() {
    return (
-   
-    <SkeletonGraphTheme>
-     <div style={this.getStyle()}>
-       <h1>{this.props.title || <Skeleton />}</h1>
-       <p>{this.props.children || <Skeleton count={5} />}</p>
-     </div>
+   <div>
+     <SkeletonTabTheme>
+       <Skeleton/>
+     </SkeletonTabTheme>
+         <SkeletonGraphTheme>
+           <div style={this.getStyle()}>
+      {this.props.children || <Skeleton height={600} />}
+       </div>
      </SkeletonGraphTheme>
-
+</div>
    );
  }
 }
