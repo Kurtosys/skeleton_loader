@@ -1,8 +1,8 @@
 import React, { Component } from "react";
 import { css, keyframes } from "emotion";
 
-export const defaultBaseColor = "#eee";
-export const defaultHighlightColor = "#f5f5f5";
+export const defaultBaseColor = "rgba(0, 0, 0, 0.01)";
+export const defaultHighlightColor = "rgba(0, 0, 0, 0.03)";
 export const defaultHeight = "20px";
 export const defaultWidth = "100%";
 
