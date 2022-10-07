@@ -25,7 +25,9 @@
     "build": "webpack",
     "storybook": "start-storybook -p 6006",
     "prepublishOnly": "yarn run build",
-    "build-storybook": "build-storybook"
+    "build-storybook": "build-storybook",
+    "prepare": "yarn run snyk-protect",
+    "snyk-protect": "snyk-protect"
   },
   "jest": {
     "setupFiles": [
@@ -34,10 +36,11 @@
   },
   "dependencies": {
     "@emotion/core": "^10.0.14",
-    "@storybook/addon-design-assets": "^5.2.0-alpha.23",
+    "@storybook/addon-design-assets": "^6.1.0",
     "emotion": "^9.2.8",
     "js-yaml": "^3.13.1",
-    "styled-components": "^4.3.2"
+    "styled-components": "^4.3.2",
+    "@snyk/protect": "latest"
   },
   "peerDependencies": {
     "react": "^15.6.1 || ^16.0.0"
@@ -72,5 +75,6 @@
     "webpack": "^4.17.1",
     "webpack-cli": "^3.1.0",
     "webpack-dev-server": "^3.1.7"
-  }
+  },
+  "snyk": true
 }
